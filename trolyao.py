@@ -2,6 +2,7 @@ import speech_recognition
 import pyttsx3
 from datetime import date, datetime
 import webbrowser
+import guess
 
 robot_ear = speech_recognition.Recognizer()   # KHỞI TẠO-----
 robot_mouth = pyttsx3.init()
@@ -45,6 +46,10 @@ while True:           # NGHE-----
 			webbrowser.get(chrome_path).open(gg)
 		elif "YouTube" in you:
 			webbrowser.get(chrome_path).open(yt)
+	elif "game" in you:
+		robot_brain = 'OK'
+		if "guessing" in you:
+			play()
 	else:
 		robot_brain = "I'm fine thank you and you"
 
