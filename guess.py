@@ -17,7 +17,7 @@ def play():
     if guess == number:
         print("Congratulations! That's right. You had guessed ", + guessing_taken ," time.")
     if guess != number:
-        print("Oh no, it's ",+str(number))
+        print("Oh no, it's ",+ number)
 
 if __name__ == '__main__':
     play()
